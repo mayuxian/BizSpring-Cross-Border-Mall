@@ -97,13 +97,13 @@ export default {
   data() {
     var validatePass = (rule, value, callback) => {
       if (this.ruleForm.password !== '') {
-        if (value !== this.ruleForm.newpassword1){
-          callback(new Error('两次输入密码不一致');
-        }else{
-          callback();
+        if (value !== this.ruleForm.newpassword1) {
+          callback(new Error('两次输入密码不一致'))
+        } else {
+          callback()
         }
       } else {
-        callback();
+        callback()
       }
     }
     return {
